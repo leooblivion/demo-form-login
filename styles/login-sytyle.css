@@ -19,13 +19,12 @@ form{
 
 .form-login {
     left: 50%;
-    opacity: 1;
 }
 
 
 .form-register {
     left: 75%;
-    opacity: 0;
+    visibility: hidden;
 }
 
 form .title {
@@ -70,7 +69,6 @@ form .input-group label {
     top: 0;
     font-size: 1em;
     color: #AAA;
-    transition: 0.3s ease;
     pointer-events: none;
 }
 
@@ -78,6 +76,7 @@ form .input-group input:focus + label, form .input-group input:valid + label {
     top: -1.1em;
     font-size: 1.1em;
     color: rgb(0,200,255);
+    transition: 0.2s;
 }
 
 form .submit {
